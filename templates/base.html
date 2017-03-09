@@ -1,0 +1,36 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premium Wood</title>
+    <link rel="stylesheet" href="{% static 'slick/slick-theme.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'slick/slick.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+{% block content %}
+
+{% endblock %}
+
+<footer>
+    <div class="footer grid group">
+        <div class="copyright">© Premium Wood</div>
+        <div class="copyright">Дизайн проекта: Александр Богачев</div>
+    </div>
+</footer>
+
+<script src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
+<script src="{% static 'slick/slick.min.js' %}"></script>
+<script src="{% static 'js/jquery.zoom.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+<script>
+</script>
+
+</body>
+</html>
