@@ -47,7 +47,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 77px 0 0 0;
     font-size: 0;
 }
 
@@ -72,11 +72,107 @@ body {
 }
 
 
+/*-------------------------POP-UP-----------------------------*/
+
+/*Outer */
+.popup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1002;
+}
+
+/* Inner */
+.popup-inner {
+    position: relative;
+    background-color: #fff;
+    max-width: 550px;
+    height: 455px;
+    padding: 40px 35px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.popup-inner .form {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0 0 0;
+    border: 1px solid #cccdcd;
+}
+
+.popup-inner .form input {
+    background-color: #f0f0f0;
+    border: 1px solid transparent;
+    display: inline-block;
+    width: 250px;
+    margin: 15px 0 0 0;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.popup-inner .form input:hover,
+.popup-inner .form input:focus {
+    border: 1px solid #d8d7d7;
+    background-color: transparent;
+}
+
+.popup-inner .form input[type="text"] {
+    margin-top: 30px;
+}
+
+.popup-inner .form input[type="submit"] {
+    background-color: #a58659;
+    color: #fff;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.popup-inner .form input[type="submit"]:hover {
+    border: 3px solid #a58659;
+    background-color: transparent;
+    color: #a58659;
+}
+
+/* Close Button */
+.popup-close {
+    background: #fff url("../images/close-btn.png") center no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 35px;
+    height: 35px;
+    transition: all 0.25s ease;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    -webkit-transform: translate(50%, -50%) rotate(180deg);
+    transform: translate(50%, -50%) rotate(180deg);
+}
+
+
 /*------------------HEADER------------------*/
 
 header {
-    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
     height: 77px;
+    background-color: #fff;
+    z-index: 1001;
 }
 
 .logo {
@@ -135,6 +231,17 @@ header {
     height: 36px;
     border: 0;
     cursor: pointer;
+    outline: 0;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.button:hover {
+    border: 3px solid #a58659;
+    background-color: transparent;
+    color: #a58659;
 }
 
 
@@ -286,16 +393,32 @@ p {
 }
 
 .d_title p {
+    display: none;
+    /*opacity: 0;*/
     background-color: #000000;
     color: #fff;
-    display: inline-block;
+    /*display: inline-block;*/
     width: 80%;
     padding: 6px 5px 2px 15px;
 }
 
 .description > p {
+    display: none;
+    /*position: relative;*/
+    /*left: -300px;*/
+    /*opacity: 0;*/
+    /*width: 100%;*/
+    /*height: 420px;*/
     font-size: 16px;
     padding-bottom: 25px;
+}
+
+.d_title .load_title1 {
+    display: inline-block;
+}
+
+.description > .load_text1 {
+    display: block;
 }
 
 .parquet_details {
@@ -309,11 +432,12 @@ p {
 
 .dot {
     position: absolute;
+    display: inline-block;
     width: 53px;
     height: 53px;
     border: 1px solid #e4cc44;
     border-radius: 50%;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 .m_dot,
@@ -338,6 +462,21 @@ p {
     border-radius: 50%;
 }
 
+.active_dot {
+    width: 74px;
+    height: 74px;
+}
+
+.active_dot .m_dot {
+    width: 54px;
+    height: 54px;
+}
+
+.active_dot .m_dot div {
+    width: 25px;
+    height: 25px;
+}
+
 .dot1 {
     top: 345px;
     left: 74px;
@@ -359,43 +498,45 @@ p {
 }
 
 .line {
+    display: none;
     position: absolute;
 }
 
 .line1 {
+    display: block;
      background-color: #2a2a2a;
      width: 1px;
-     height: 300px;
+     height: 309px;
      top: 88px;
-     left: -22px;
+     left: -20px;
      transform: rotate(137deg);
  }
 
 .line2 {
     background-color: #2a2a2a;
     width: 1px;
-    height: 430px;
+    height: 436px;
     top: 30px;
-    left: 54px;
+    left: 58px;
     transform: rotate(123deg);
 }
 
 .line3 {
     background-color: #2a2a2a;
     width: 1px;
-    height: 575px;
-    top: -50px;
-    left: 144px;
-    transform: rotate(112deg);
+    height: 560px;
+    top: -37px;
+    left: 132px;
+    transform: rotate(114deg);
 }
 
 .line4 {
     background-color: #2a2a2a;
     width: 1px;
-    height: 475px;
-    top: -84px;
-    left: 112px;
-    transform: rotate(96deg);
+    height: 470px;
+    top: -78px;
+    left: 110px;
+    transform: rotate(97deg);
 }
 
 /*------------------BG3------------------*/
@@ -687,14 +828,26 @@ input[type='email'] {
 }
 
 .form input[type="submit"] {
-    background-color: #a58659;
+    background-color: #ffe192;
     font-family: "CirceBold", sans-serif;
     font-size: 12px;
-    color: #fff;
+    color: #896850;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: 30px;
     padding-left: 0;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    outline: 0;
+}
+
+.form input[type="submit"]:hover {
+    border: 3px solid #ffe192;
+    background-color: transparent;
+    color: #ffe192;
 }
 
 .phone_number {
@@ -792,8 +945,9 @@ input[type='email'] {
     display: inline-block;
     vertical-align: top;
     width: 29.45454545454545%;
+    height: 550px;
     margin-right: 5.636363636363636%;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 
 .stages > div:nth-child(3n) {
@@ -906,6 +1060,10 @@ input[type='email'] {
     width: 100%;
     height: auto;
     filter: grayscale(100%);
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 .process_img > div:last-of-type{
@@ -921,6 +1079,10 @@ input[type='email'] {
     width: 100%;
     height: 100%;
     filter: grayscale(100%);
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 .process_img_min img:hover {
