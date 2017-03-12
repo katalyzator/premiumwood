@@ -1,4 +1,10 @@
+import os
+
+from django.core.mail import EmailMessage
 from django.shortcuts import render
+from django.template import Context, Template
+
+from premiumwood.settings import BASE_DIR
 
 
 def index_view(request):
@@ -6,3 +12,34 @@ def index_view(request):
     template = 'index.html'
 
     return render(request, template, context)
+
+
+def send_mail(request):
+    try:
+        name = request.POST.get('name')
+        number = request.POST.get('number')
+        email = request.POST.get('email')
+
+        f = open(os.path.join(BASE_DIR, "templates/email.html"))
+
+        content = f.read()
+        f.close()
+        context = Context(dict(mail=email, number=number, name=name))
+        template = Template(content)
+
+        email = EmailMessage('EasyDo', template.render(context), to=['odaniaro@gmail.com'])
+        email.content_subtype = 'html'
+
+        email.send()
+
+        context1 = {"result": "success"}
+        template1 = 'index.html'
+
+        return render(request, template1, context1)
+
+    except:
+
+        context1 = {"result": "success"}
+        template1 = 'index.html'
+
+        return render(request, template1, context1)
