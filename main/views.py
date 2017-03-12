@@ -3,6 +3,7 @@ import os
 from django.core.mail import EmailMessage
 from django.shortcuts import render
 from django.template import Context, Template
+from django.views.decorators.csrf import csrf_exempt
 
 from premiumwood.settings import BASE_DIR
 
@@ -14,6 +15,7 @@ def index_view(request):
     return render(request, template, context)
 
 
+@csrf_exempt
 def send_mail(request):
     try:
         name = request.POST.get('name')
@@ -27,7 +29,7 @@ def send_mail(request):
         context = Context(dict(mail=email, number=number, name=name))
         template = Template(content)
 
-        email = EmailMessage('EasyDo', template.render(context), to=['odaniaro@gmail.com'])
+        email = EmailMessage('Application from Site', template.render(context), to=['info@pw.kg'])
         email.content_subtype = 'html'
 
         email.send()
@@ -39,7 +41,7 @@ def send_mail(request):
 
     except:
 
-        context1 = {"result": "success"}
+        context1 = {"result": "error"}
         template1 = 'index.html'
 
         return render(request, template1, context1)
