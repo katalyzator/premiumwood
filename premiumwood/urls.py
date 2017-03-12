@@ -7,6 +7,7 @@ from premiumwood import settings
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', 'main.views.index_view', name='index'),
+    url(r'^sendmail/$', 'main.views.send_mail', name='sendmail'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

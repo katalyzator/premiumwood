@@ -22,12 +22,16 @@ def send_mail(request):
         number = request.POST.get('number')
         email = request.POST.get('email')
 
-        f = open(os.path.join(BASE_DIR, "templates/email.html"))
+        f = open(os.path.join(BASE_DIR, "templates/mail.html"))
 
         content = f.read()
         f.close()
         context = Context(dict(mail=email, number=number, name=name))
         template = Template(content)
+
+        print email
+        print number
+        print name
 
         email = EmailMessage('Application from Site', template.render(context), to=['info@pw.kg'])
         email.content_subtype = 'html'

@@ -4,980 +4,1031 @@
 
 {% block content %}
 
-<div class="popup" data-popup="popup-1">
-    <div class="popup-inner">
-        <!--<div class="popup_content">-->
+    <div class="popup" data-popup="popup-1">
+        <div class="popup-inner">
+            <!--<div class="popup_content">-->
 
-        <form method="post" action="#" class="form">
+            <form method="post" action="{% url 'sendmail' %}" class="form">
 
-            <p>Заполните форму, чтобы оставить заявку</p>
+                <p>Заполните форму, чтобы оставить заявку</p>
 
-            <label for="name0">
-                <input type="text" id="name0" placeholder="Имя" name="name">
-            </label>
-
-            <label for="number0">
-                <input type="number" id="number0" placeholder="Телефон с кодом" required name="number">
-            </label>
-
-            <label for="email0">
-                <input type="email" id="email0" placeholder="E-Mail" name="email">
-            </label>
-
-            <input type="submit" value="отправить">
-
-            <a class="popup-close" data-popup-close="popup-1"></a>
-        </form>
-
-    </div>
-        <!--</div>-->
-</div>
-
-<header>
-    <div class="header grid group">
-        <a href="#main" class="main"><img src="{% static 'images/logo.png' %}" alt="image" class="logo"></a>
-
-        <nav>
-            <ul class="menu">
-                <li><a href="#product">продукция</a></li>
-                <li><a href="#company">о компании</a></li>
-                <li><a href="#contacts">контакты</a></li>
-            </ul>
-        </nav>
-
-        <div class="contacts">
-            <span>+996 550 901 440</span>
-            <button type="button" class="button" data-popup-open="popup-1">оставить заявку</button>
-        </div>
-    </div>
-</header>
-
-<div class="bg1">
-    <div class="content1 grid">
-        <div class="title">
-            <h1>инженерная паркетная доска премиум-класса</h1>
-
-            <p>Доставка по Кыргызстану, Казахстану и России напрямую от производителя</p>
-        </div>
-    </div>
-</div>
-
-<div class="bg2">
-    <div class="content2 grid">
-        <div class="title_block">
-            <h2>&nbsp;&nbsp;что такое <span>инженерная</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;паркетная &nbsp;&nbsp;доска
-                <span class="hider"></span></h2>
-            <img src="{% static 'images/short_line.png' %}" alt="image">
-            <img src="{% static 'images/long_line.png' %}" alt="image">
-        </div>
-
-        <div class="text_block group">
-            <!--<p>ОсОО “Premium Wood” представляет инженерную паркетную доску изготовленного по немецкой технологии на-->
-                <!--оборудовании Шредер. </p>-->
-
-            <p>Современные технологии позволяют насыщать рынок все более качественными напольными покрытиями. И инженерная доска не исключение! Premium Wood представляет вашему вниманию инженерную доску премиум- класса, изготовленную по немецкой технологии на оборудовании Шредер. Горный Ильм- самое подходящее дерево для производства первоклассного паркета, которое произрастает в горных районах Кыргызстана и имеет непредсказуемую текстуру строения. Ищете пол, из натуральной древесины, но ограничены в бюджете? Хотите массивную доску, но сомневаетесь, что сможете сохранять подходящую температуру? Тогда обязательно обратите внимание на инженерную доску.
-            </p>
-        </div>
-
-        <div class="advantages group">
-            <div class="advantage">
-                <img src="{% static 'images/desc1.png' %}" alt="image">
-
-                <p>Влагостойкость и шумоизоляция</p>
-            </div>
-
-            <div class="advantage">
-                <img src="{% static 'images/desc2.png' %}" alt="image">
-
-                <p>Гарантированная долговечность</p>
-            </div>
-
-            <div class="advantage">
-                <img src="{% static 'images/desc3.png' %}" alt="image">
-
-                <p>Можно стелить на теплый пол</p>
-            </div>
-
-            <div class="advantage">
-                <img src="{% static 'images/desc4.png' %}" alt="image">
-
-                <p>Восстановление повреждений</p>
-            </div>
-        </div>
-
-        <div class="about_parquet group">
-            <a class="description">
-
-                <div class="d_title">
-                    <p class="load_title1">Инженерная доска</p>
-                    <p class="load_title2">Средний слой</p>
-                    <p class="load_title3">Поддерживающий слой</p>
-                    <p class="load_title4">Верхний слой </p>
-                </div>
-
-                <p class="load_text1">это двух- или трёхслойная конструкция. Основой этому изделию служит многослойная влагостойкая фанера. Благодаря тому, что все слои фанеры склеены так, что волокна древесного материала находятся во взаимно перпендикулярном направлении, обеспечивается высокая геометрическая стабильность и прочность напольного покрытия.
-                </p>
-
-                <p class="load_text2">изготавливается из более мягкой древесины. Этот слой позволяет доске сохранять форму и стабильность. Изготавливается из деревянных брусочков, фанеры или ДВП.
-                </p>
-
-                <p class="load_text3">ключевой слой для обеспечения крепкой основы для доски.
-                </p>
-
-                <p class="load_text4">изготавливается из твердых пород дерева. Он несет декоративную нагрузку и на него наносится защитное покрытие: лак или масло
-                </p>
-
-                <!--<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur-->
-                    <!--magni dolores eos qui ratione voluptatem </p>-->
-
-            </a>
-
-            <div class="parquet_details">
-                <img src="{% static 'images/wood.png' %}" alt="image">
-
-                <a href="#" class="dot dot1 active_dot">
-                    <div class="m_dot">
-                        <div></div>
-                    </div>
-                </a>
-
-                <a href="#" class="dot dot2">
-                    <div class="m_dot">
-                        <div></div>
-                    </div>
-                </a>
-
-                <a href="#" class="dot dot3">
-                    <div class="m_dot">
-                        <div></div>
-                    </div>
-                </a>
-
-                <a href="#" class="dot dot4">
-                    <div class="m_dot">
-                        <div></div>
-                    </div>
-                </a>
-
-                <div class="line line1"></div>
-                <div class="line line2"></div>
-                <div class="line line3"></div>
-                <div class="line line4"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="bg3" id="product">
-    <div class="content3 grid">
-        <div class="title_block">
-            <h2> &nbsp;&nbsp;&nbsp;&nbsp;продукция <span>premium &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wood</span>
-                <span class="hider"></span>
-            </h2>
-            <img src="{% static 'images/short_line.png' %}" alt="image">
-            <img src="{% static 'images/long_line.png' %}" alt="image">
-        </div>
-
-        <div class="text_block group">
-            <p>Использование  качественного сырья, специализированное оборудование и профессионализм могут гарантировать производство паркета ,который прослужит вам долгие годы. Дерево, которое мы используем для нашей продукции  максимально адаптировано к капризам климата, а значит стабильно при изготовлении и использовании. Мастерство специалистов обеспечивает напольному покрытию надежность и долговечность. А использование итальянского масла для финишного покрытия придает полу изысканный вид.
-            </p>
-
-            <!--<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni-->
-                <!--dolores eos qui ratione voluptatem sequi nesciunt. </p>-->
-        </div>
-
-        <div class="types">
-            <div class="type_bg">
-                <div class="type">
-                    <img src="{% static 'images/imperial.jpg' %}" alt="image">
-
-                    <div class="type_name">
-                        <span>imperial</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="type_bg">
-                <div class="type">
-                    <img src="{% static 'images/exclusive.jpg' %}" alt="image">
-
-                    <div class="type_name">
-                        <span>exclusive</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="parquet">
-            <div class="imperial">
-                <h5>
-                    <img src="{% static 'images/short_line.png' %}" alt="image">
-                    <span>коллекция</span><br>
-                    imperial
-                </h5>
-
-                <p>Оригинальная коллекция “Imperial” обладает люксовым качеством и неповторимыми оттенками. Ровная текстура и незамысловатый рисунок подойдут для классического интерьера.
-                </p>
-
-
-                <div class="tabs-stage">
-                    <div class="p_imperial" id="tab-1">
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-                    </div>
-
-                    <div class="p_imperial" id="tab-2">
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-                    </div>
-
-                    <div class="p_imperial" id="tab-3">
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-                    </div>
-
-                    <div class="p_imperial" id="tab-4">
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-                    </div>
-
-                    <div class="p_imperial" id="tab-5">
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-                    </div>
-                </div>
-
-                <ul class="tabs-nav">
-                    <li>
-                        <a href="#tab-1">
-                            <div class="min_block">
-                                <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
-                            </div>
-
-                            <p>Текстура</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tab-2">
-                            <div class="min_block">
-                            <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
-                            </div>
-
-                            <p>Зал</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tab-3">
-                            <div class="min_block">
-                              <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
-                            </div>
-
-                            <p>Спальня</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tab-4">
-                            <div class="min_block">
-                                <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
-                            </div>
-
-                            <p>Детская</p>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#tab-5">
-                            <div class="min_block">
-                               <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
-                            </div>
-
-                            <p>Прихожая</p>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-
-
-            <div class="exclusive">
-                <h5>
-                    <img src="{% static 'images/short_line.png' %}" alt="image">
-                    <span>коллекция</span><br>
-                    exclusive
-                </h5>
-
-                <p>На создание коллекции “Exclusive” нас вдохновила сама природа. Она характеризуется гармоничными оттенками и ярко выраженными рисунками с небольшими сучками.  Элегантный вид паркета придаст вашему дому роскошную утонченность. Искушенные ценители будут рады естественной красоте натурального дерева.
-                </p>
-
-
-                <div class="tabs-block">
-                    <div class="p_imperial" id="tab-6">
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                          <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-                    </div>
-
-                    <div class="p_imperial" id="tab-7">
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-                    </div>
-
-                    <div class="p_imperial" id="tab-8">
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                          <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-                    </div>
-
-                    <div class="p_imperial" id="tab-9">
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-                    </div>
-
-                    <div class="p_imperial" id="tab-10">
-                        <div class="parquet_img">
-                           <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                          <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-
-                        <div class="parquet_img">
-                            <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                            <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                        </div>
-                    </div>
-                </div>
-
-                <ul class="tabs-button">
-                    <li>
-                        <a href="#tab-6">
-                            <div class="min_block">
-                                <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
-                            </div>
-
-                            <p>Текстура</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tab-7">
-                            <div class="min_block">
-                                <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
-
-                            </div>
-
-                            <p>Зал</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tab-8">
-                            <div class="min_block">
-                                <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
-                            </div>
-
-                            <p>Спальня</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#tab-9">
-                            <div class="min_block">
-                                <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
-                            </div>
-
-                            <p>Детская</p>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#tab-10">
-                            <div class="min_block">
-                                <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
-                            </div>
-
-                            <p>Прихожая</p>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-
-
-    </div>
-</div>
-
-<div class="bg4">
-    <div class="content4 grid">
-        <div class="form_block">
-            <i class="bird"></i>
-            <i class="big_leave"></i>
-            <i class="small_leave"></i>
-
-            <form method="post" action="#" class="form">
-
-                <h2>узнайте больше</h2>
-                <h5>заполните форму, мы свяжемся с вами и ответим на любые вопросы</h5>
-
-
-                <label for="name">
-                    <input type="text" id="name" placeholder="Имя">
+                <label for="name0">
+                    <input type="text" id="name0" placeholder="Имя" name="name">
                 </label>
 
-                <label for="number">
-                    <input type="number" id="number" placeholder="Телефон с кодом">
+                <label for="number0">
+                    <input type="number" id="number0" placeholder="Телефон с кодом" required name="number">
                 </label>
 
-                <label for="email">
-                    <input type="email" id="email" placeholder="E-Mail">
+                <label for="email0">
+                    <input type="email" id="email0" placeholder="E-Mail" name="email" required>
                 </label>
 
                 <input type="submit" value="отправить">
+
+                <a class="popup-close" data-popup-close="popup-1"></a>
             </form>
 
-            <div class="phone_number">или позвоните нам: +996 550 901 440</div>
         </div>
+        <!--</div>-->
+    </div>
 
-        <div class="product">
+    <header>
+        <div class="header grid group">
+            <a href="#main" class="main"><img src="{% static 'images/logo.png' %}" alt="image" class="logo"></a>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#product">продукция</a></li>
+                    <li><a href="#company">о компании</a></li>
+                    <li><a href="#contacts">контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="contacts">
+                <span>+996 550 901 440</span>
+                <button type="button" class="button" data-popup-open="popup-1">оставить заявку</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg1">
+        <div class="content1 grid">
+            <div class="title">
+                <h1>инженерная паркетная доска премиум-класса</h1>
+
+                <p>Доставка по Кыргызстану, Казахстану и России напрямую от производителя</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg2">
+        <div class="content2 grid">
             <div class="title_block">
-                <h2><span>преимущества</span> &nbsp;&nbsp;&nbsp;нашей &nbsp;продукции
+                <h2>&nbsp;&nbsp;что такое <span>инженерная</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;паркетная &nbsp;&nbsp;доска
+                    <span class="hider"></span></h2>
+                <img src="{% static 'images/short_line.png' %}" alt="image">
+                <img src="{% static 'images/long_line.png' %}" alt="image">
+            </div>
+
+            <div class="text_block group">
+                <!--<p>ОсОО “Premium Wood” представляет инженерную паркетную доску изготовленного по немецкой технологии на-->
+                <!--оборудовании Шредер. </p>-->
+
+                <p>Современные технологии позволяют насыщать рынок все более качественными напольными покрытиями. И
+                    инженерная доска не исключение! Premium Wood представляет вашему вниманию инженерную доску премиум-
+                    класса, изготовленную по немецкой технологии на оборудовании Шредер. Горный Ильм- самое подходящее
+                    дерево для производства первоклассного паркета, которое произрастает в горных районах Кыргызстана и
+                    имеет непредсказуемую текстуру строения. Ищете пол, из натуральной древесины, но ограничены в
+                    бюджете? Хотите массивную доску, но сомневаетесь, что сможете сохранять подходящую температуру?
+                    Тогда обязательно обратите внимание на инженерную доску.
+                </p>
+            </div>
+
+            <div class="advantages group">
+                <div class="advantage">
+                    <img src="{% static 'images/desc1.png' %}" alt="image">
+
+                    <p>Влагостойкость и шумоизоляция</p>
+                </div>
+
+                <div class="advantage">
+                    <img src="{% static 'images/desc2.png' %}" alt="image">
+
+                    <p>Гарантированная долговечность</p>
+                </div>
+
+                <div class="advantage">
+                    <img src="{% static 'images/desc3.png' %}" alt="image">
+
+                    <p>Можно стелить на теплый пол</p>
+                </div>
+
+                <div class="advantage">
+                    <img src="{% static 'images/desc4.png' %}" alt="image">
+
+                    <p>Восстановление повреждений</p>
+                </div>
+            </div>
+
+            <div class="about_parquet group">
+                <a class="description">
+
+                    <div class="d_title">
+                        <p class="load_title1">Инженерная доска</p>
+                        <p class="load_title2">Средний слой</p>
+                        <p class="load_title3">Поддерживающий слой</p>
+                        <p class="load_title4">Верхний слой </p>
+                    </div>
+
+                    <p class="load_text1">это двух- или трёхслойная конструкция. Основой этому изделию служит
+                        многослойная влагостойкая фанера. Благодаря тому, что все слои фанеры склеены так, что волокна
+                        древесного материала находятся во взаимно перпендикулярном направлении, обеспечивается высокая
+                        геометрическая стабильность и прочность напольного покрытия.
+                    </p>
+
+                    <p class="load_text2">изготавливается из более мягкой древесины. Этот слой позволяет доске сохранять
+                        форму и стабильность. Изготавливается из деревянных брусочков, фанеры или ДВП.
+                    </p>
+
+                    <p class="load_text3">ключевой слой для обеспечения крепкой основы для доски.
+                    </p>
+
+                    <p class="load_text4">изготавливается из твердых пород дерева. Он несет декоративную нагрузку и на
+                        него наносится защитное покрытие: лак или масло
+                    </p>
+
+                    <!--<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur-->
+                    <!--magni dolores eos qui ratione voluptatem </p>-->
+
+                </a>
+
+                <div class="parquet_details">
+                    <img src="{% static 'images/wood.png' %}" alt="image">
+
+                    <a href="#" class="dot dot1 active_dot">
+                        <div class="m_dot">
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="dot dot2">
+                        <div class="m_dot">
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="dot dot3">
+                        <div class="m_dot">
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="dot dot4">
+                        <div class="m_dot">
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                    <div class="line line4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg3" id="product">
+        <div class="content3 grid">
+            <div class="title_block">
+                <h2> &nbsp;&nbsp;&nbsp;&nbsp;продукция <span>premium &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wood</span>
+                    <span class="hider"></span>
+                </h2>
+                <img src="{% static 'images/short_line.png' %}" alt="image">
+                <img src="{% static 'images/long_line.png' %}" alt="image">
+            </div>
+
+            <div class="text_block group">
+                <p>Использование качественного сырья, специализированное оборудование и профессионализм могут
+                    гарантировать производство паркета ,который прослужит вам долгие годы. Дерево, которое мы используем
+                    для нашей продукции максимально адаптировано к капризам климата, а значит стабильно при изготовлении
+                    и использовании. Мастерство специалистов обеспечивает напольному покрытию надежность и
+                    долговечность. А использование итальянского масла для финишного покрытия придает полу изысканный
+                    вид.
+                </p>
+
+                <!--<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni-->
+                <!--dolores eos qui ratione voluptatem sequi nesciunt. </p>-->
+            </div>
+
+            <div class="types">
+                <div class="type_bg">
+                    <div class="type">
+                        <img src="{% static 'images/imperial.jpg' %}" alt="image">
+
+                        <div class="type_name">
+                            <span>imperial</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="type_bg">
+                    <div class="type">
+                        <img src="{% static 'images/exclusive.jpg' %}" alt="image">
+
+                        <div class="type_name">
+                            <span>exclusive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="parquet">
+                <div class="imperial">
+                    <h5>
+                        <img src="{% static 'images/short_line.png' %}" alt="image">
+                        <span>коллекция</span><br>
+                        imperial
+                    </h5>
+
+                    <p>Оригинальная коллекция “Imperial” обладает люксовым качеством и неповторимыми оттенками. Ровная
+                        текстура и незамысловатый рисунок подойдут для классического интерьера.
+                    </p>
+
+
+                    <div class="tabs-stage">
+                        <div class="p_imperial" id="tab-1">
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="p_imperial" id="tab-2">
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="p_imperial" id="tab-3">
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="p_imperial" id="tab-4">
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="p_imperial" id="tab-5">
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="tabs-nav">
+                        <li>
+                            <a href="#tab-1">
+                                <div class="min_block">
+                                    <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
+                                </div>
+
+                                <p>Текстура</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab-2">
+                                <div class="min_block">
+                                    <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
+                                </div>
+
+                                <p>Зал</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab-3">
+                                <div class="min_block">
+                                    <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
+                                </div>
+
+                                <p>Спальня</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab-4">
+                                <div class="min_block">
+                                    <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
+                                </div>
+
+                                <p>Детская</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#tab-5">
+                                <div class="min_block">
+                                    <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
+                                </div>
+
+                                <p>Прихожая</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <div class="exclusive">
+                    <h5>
+                        <img src="{% static 'images/short_line.png' %}" alt="image">
+                        <span>коллекция</span><br>
+                        exclusive
+                    </h5>
+
+                    <p>На создание коллекции “Exclusive” нас вдохновила сама природа. Она характеризуется гармоничными
+                        оттенками и ярко выраженными рисунками с небольшими сучками. Элегантный вид паркета придаст
+                        вашему дому роскошную утонченность. Искушенные ценители будут рады естественной красоте
+                        натурального дерева.
+                    </p>
+
+
+                    <div class="tabs-block">
+                        <div class="p_imperial" id="tab-6">
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="p_imperial" id="tab-7">
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="p_imperial" id="tab-8">
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="p_imperial" id="tab-9">
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="p_imperial" id="tab-10">
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+
+                            <div class="parquet_img">
+                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="tabs-button">
+                        <li>
+                            <a href="#tab-6">
+                                <div class="min_block">
+                                    <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
+                                </div>
+
+                                <p>Текстура</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab-7">
+                                <div class="min_block">
+                                    <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
+
+                                </div>
+
+                                <p>Зал</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab-8">
+                                <div class="min_block">
+                                    <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
+                                </div>
+
+                                <p>Спальня</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab-9">
+                                <div class="min_block">
+                                    <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
+                                </div>
+
+                                <p>Детская</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#tab-10">
+                                <div class="min_block">
+                                    <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
+                                </div>
+
+                                <p>Прихожая</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="bg4">
+        <div class="content4 grid">
+            <div class="form_block">
+                <i class="bird"></i>
+                <i class="big_leave"></i>
+                <i class="small_leave"></i>
+
+                <form method="post" action="{% url 'sendmail' %}" class="form" {% csrf_token %}>
+
+                    <h2>узнайте больше</h2>
+                    <h5>заполните форму, мы свяжемся с вами и ответим на любые вопросы</h5>
+
+
+                    <label for="name">
+                        <input type="text" id="name" placeholder="Имя" name="name">
+                    </label>
+
+                    <label for="number">
+                        <input type="number" id="number" placeholder="Телефон с кодом" name="number" required>
+                    </label>
+
+                    <label for="email">
+                        <input type="email" id="email" placeholder="E-Mail" name="email" required>
+                    </label>
+
+                    <input type="submit" value="отправить">
+                </form>
+
+                <div class="phone_number">или позвоните нам: +996 550 901 440</div>
+            </div>
+
+            <div class="product">
+                <div class="title_block">
+                    <h2><span>преимущества</span> &nbsp;&nbsp;&nbsp;нашей &nbsp;продукции
+                        <span class="hider"></span></h2>
+                    <img src="{% static 'images/short_line.png' %}" alt="image">
+                    <img src="{% static 'images/advantage_pattern.png' %}" alt="image">
+                </div>
+
+                <div class="advantages">
+                    <div class="advantage">
+                        <img src="{% static 'images/advantage1.png' %}" alt="image">
+
+                        <p>Произведено на немецком оборудовании «Schroeder»</p>
+                    </div>
+
+                    <div class="advantage">
+                        <img src="{% static 'images/advantage2.png' %}" alt="image">
+
+                        <p>Твердость древесины -
+                            5 по бринеллю</p>
+                    </div>
+
+                    <div class="advantage">
+                        <img src="{% static 'images/advantage3.png' %}" alt="image">
+
+                        <p>Горная порода обеспечивает необычную текстуру древесины</p>
+                    </div>
+
+                    <div class="advantage">
+                        <img src="{% static 'images/advantage4.png' %}" alt="image">
+
+                        <p>Абсолютная экологичность продукции</p>
+                    </div>
+
+                    <div class="advantage">
+                        <img src="{% static 'images/advantage5.png' %}" alt="image">
+
+                        <p>Гарантия завода на всю представленную продукцию -
+                            10 лет</p>
+                    </div>
+
+                    <div class="advantage">
+                        <img src="{% static 'images/advantage6.png' %}" alt="image">
+
+                        <p>Для покрытия используется масло на основе натурального пчелиного воска (производство
+                            Италия)</p>
+                    </div>
+
+                    <div class="advantage">
+                        <img src="{% static 'images/advantage7.png' %}" alt="image">
+
+                        <p>Своевременное и качественное сервисное обслуживание
+                            в вашем городе</p>
+                    </div>
+
+                    <div class="advantage">
+                        <img src="{% static 'images/advantage8.png' %}" alt="image">
+
+                        <p>Покупка и доставка напрямую
+                            от производителя. Регионы: Кыргызстан, Казахстан и Россия. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg5">
+        <div class="content5 grid">
+
+            <div class="title_block">
+                <h2>&nbsp;&nbsp;&nbsp;этапы <span>производства</span>
                     <span class="hider"></span></h2>
                 <img src="{% static 'images/short_line.png' %}" alt="image">
                 <img src="{% static 'images/advantage_pattern.png' %}" alt="image">
             </div>
 
-            <div class="advantages">
-                <div class="advantage">
-                    <img src="{% static 'images/advantage1.png' %}" alt="image">
+            <div class="stages">
+                <div class="stage">
+                    <div class="bg_line"></div>
+                    <span>1.</span>
 
-                    <p>Произведено на немецком оборудовании «Schroeder»</p>
+                    <p>Сырье, поступает на предприятие в виде заготовок, уложенных в паллеты. В каждой паллете
+                        осуществляется выборочный контроль заготовок древесины на наличие дефекта.
+                    </p>
                 </div>
 
-                <div class="advantage">
-                    <img src="{% static 'images/advantage2.png' %}" alt="image">
+                <div class="stage">
+                    <div class="bg_line"></div>
+                    <span>2.</span>
 
-                    <p>Твердость древесины -
-                        5 по бринеллю</p>
+                    <p>Все заготовки закладываются в сушильные камеры и в течение полутора месяцев обрабатываются
+                        горячим воздухом с высокой температурой. На этом же этапе для получения заготовок из сосны,
+                        березы и бука с другими механическими (прочность) и физическими (цвет) свойствами, их подвергают
+                        термической обработке. Термообработка – это нагрев древесины до высокой температуры без доступа
+                        кислорода с последующим естественным охлаждением.
+
+                    </p>
                 </div>
 
-                <div class="advantage">
-                    <img src="{% static 'images/advantage3.png' %}" alt="image">
+                <div class="stage">
+                    <div class="bg_line"></div>
+                    <span>3.</span>
 
-                    <p>Горная порода обеспечивает необычную текстуру древесины</p>
+                    <p>Деревянную заготовку на пильном станке распиливают на доски заданной ширины и толщины.
+                        Доски заданной толщины поперечно распиливают на заготовки определенной длинны, одновременно
+                        срезая дефектные места.
+
+                    </p>
                 </div>
 
-                <div class="advantage">
-                    <img src="{% static 'images/advantage4.png' %}" alt="image">
+                <div class="stage">
+                    <div class="bg_line"></div>
+                    <span>4.</span>
 
-                    <p>Абсолютная экологичность продукции</p>
+                    <p>Склеивание паркетной доски в единое целое осуществляется на автоматической линии склеивания.
+                        Верхний слой получают путем склеивания ламелей в торец без подложки. Затем на автоматической
+                        линии склеивания верхний, средний и нижний слои склеиваются в единое целое. После автоматической
+                        линии склеивания паркетная доска загружается в паровой пресс где прессуется и прогревается на
+                        всю толщину.
+
+                    </p>
                 </div>
 
-                <div class="advantage">
-                    <img src="{% static 'images/advantage5.png' %}" alt="image">
+                <div class="stage">
+                    <div class="bg_line"></div>
+                    <span>5.</span>
 
-                    <p>Гарантия завода на всю представленную продукцию -
-                        10 лет</p>
+                    <p>Обработка верхнего слоя паркетной доски
+
+                    </p>
                 </div>
 
-                <div class="advantage">
-                    <img src="{% static 'images/advantage6.png' %}" alt="image">
+                <div class="stage">
+                    <div class="bg_line"></div>
+                    <span>6.</span>
 
-                    <p>Для покрытия используется масло на основе натурального пчелиного воска (производство Италия)</p>
+                    <p>Для упаковки применяются только те материалы, которые можно использовать в качестве вторичных
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="form_block">
+
+                <i class="pen"></i>
+
+                <form method="post" action="{% url 'sendmail' %}" class="form" {% csrf_token %}>
+
+                    <h2>объемы и доставка</h2>
+                    <h5>оставьте заявку сейчас и мы проведем для вас все необходимые расчеты</h5>
+
+
+                    <label for="name1">
+                        <input type="text" id="name1" placeholder="Имя" name="name">
+                    </label>
+
+                    <label for="number1">
+                        <input type="number" id="number1" placeholder="Телефон с кодом" name="number" required>
+                    </label>
+
+                    <label for="email1">
+                        <input type="email" id="email1" placeholder="E-Mail" name="email" required>
+                    </label>
+
+                    <input type="submit" value="отправить">
+                </form>
+
+                <div class="phone_number">или позвоните нам: +996 550 901 440</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg6">
+        <div class="content6 grid">
+            <div class="title_block">
+                <h2>&nbsp;&nbsp;процесс <span>производства</span>
+                    <span class="hider"></span></h2>
+                <img src="{% static 'images/short_line.png' %}" alt="image">
+                <img src="{% static 'images/advantage_pattern.png' %}" alt="image">
+            </div>
+
+            <div class="process">
+                <div class="process_img">
+                    <img src="{% static 'images/process1.jpg' %}" alt="image">
                 </div>
 
-                <div class="advantage">
-                    <img src="{% static 'images/advantage7.png' %}" alt="image">
-
-                    <p>Своевременное и качественное сервисное обслуживание
-                        в вашем городе</p>
+                <div class="process_img">
+                    <img src="{% static 'images/process2.jpg' %}" alt="image">
                 </div>
 
-                <div class="advantage">
-                    <img src="{% static 'images/advantage8.png' %}" alt="image">
+                <div class="process_img">
+                    <div class="process_img_min">
+                        <img src="{% static 'images/process3.jpg' %}" alt="image">
+                    </div>
+                    <div class="process_img_min">
+                        <img src="{% static 'images/process4.jpg' %}" alt="image">
+                    </div>
+                </div>
 
-                    <p>Покупка и доставка напрямую
-                        от производителя. Регионы: Кыргызстан, Казахстан и Россия. </p>
+                <div class="process_img">
+                    <img src="{% static 'images/process5.jpg' %}" alt="image">
+                </div>
+
+                <div class="process_img">
+                    <img src="{% static 'images/process6.jpg' %}" alt="image">
+                </div>
+
+                <div class="process_img">
+                    <img src="{% static 'images/process7.jpg' %}" alt="image">
+                </div>
+            </div>
+
+            <div class="video_bg">
+                <div class="video">
+                    <div class="p_video">
+                        <span>видеоролик</span>
+
+                        <h5>оцените<br>
+                            процесс<br>
+                            произ-<br>
+                            водства<br>
+                            вживую</h5>
+                    </div>
+                    <div class="iframe">
+                        <iframe src="https://www.youtube.com/embed/EkWPMaCd0aY?ecver=1" frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg7">
+        <div class="content7 grid group">
+            <div class="title_block">
+                <h2>&nbsp;&nbsp;сертификаты <span>premium &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wood</span>
+                    <span class="hider"></span></h2>
+                <img src="{% static 'images/short_line.png' %}" alt="image">
+                <img src="{% static 'images/advantage_pattern.png' %}" alt="image">
+            </div>
+
+            <div class="slider">
+                <div class="sl_slide">
+                    <img src="{% static 'images/certificate2.jpg' %}" alt="image">
+                </div>
+
+                <div class="sl_slide">
+                    <img src="{% static 'images/certificate2.jpg' %}" alt="image">
+                </div>
+
+                <div class="sl_slide">
+                    <img src="{% static 'images/certificate2.jpg' %}" alt="image">
+                </div>
+
+                <div class="sl_slide">
+                    <img src="{% static 'images/certificate2.jpg' %}" alt="image">
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="bg5">
-    <div class="content5 grid">
+    <div class="bg8">
+        <div class="content8 grid">
 
-        <div class="title_block">
-            <h2>&nbsp;&nbsp;&nbsp;этапы <span>производства</span>
-                <span class="hider"></span></h2>
-            <img src="{% static 'images/short_line.png' %}" alt="image">
-            <img src="{% static 'images/advantage_pattern.png' %}" alt="image">
+            <div class="title_block">
+                <h2>&nbsp; <span>отзывы</span> наших &nbsp;&nbsp;клиентов
+                    <span class="hider"></span></h2>
+                <img src="{% static 'images/short_line.png' %}" alt="image">
+                <img src="{% static 'images/advantage_pattern.png' %}" alt="image">
+            </div>
+
+            <div class="vertical_slider group">
+
+                <div class="v_slider_nav">
+                    <div class="sl_nav_item">
+                        <i class="polygon"></i>
+                        <img src="{% static 'images/comment1.jpg' %}" alt="image">
+                    </div>
+
+                    <div class="sl_nav_item">
+                        <i class="polygon"></i>
+                        <img src="{% static 'images/comment1.jpg' %}" alt="image">
+                    </div>
+
+                    <div class="sl_nav_item">
+                        <i class="polygon"></i>
+                        <img src="{% static 'images/comment1.jpg' %}" alt="image">
+                    </div>
+
+                    <div class="sl_nav_item">
+                        <i class="polygon"></i>
+                        <img src="{% static 'images/comment1.jpg' %}" alt="image">
+                    </div>
+                </div>
+
+                <div class="v_slider">
+                    <div class="sl_item">
+                        <img src="{% static 'images/main_comment.jpg' %}" alt="image">
+                    </div>
+
+                    <div class="sl_item">
+                        <img src="{% static 'images/main_comment.jpg' %}" alt="image">
+                    </div>
+
+                    <div class="sl_item">
+                        <img src="{% static 'images/main_comment.jpg' %}" alt="image">
+                    </div>
+
+                    <div class="sl_item">
+                        <img src="{% static 'images/main_comment.jpg' %}" alt="image">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form_block">
+                <form method="post" action="{% url 'sendmail' %}" class="form" {% csrf_token %}>
+
+                    <h2>остались вопросы?</h2>
+                    <h5>оставьте свои данные</h5>
+                    <h5>и наш специалист свяжется с вами</h5>
+
+
+                    <label for="name2">
+                        <input type="text" id="name2" placeholder="Имя" name="name">
+                    </label>
+
+                    <label for="number2">
+                        <input type="number" id="number2" placeholder="Телефон с кодом" name="number" required>
+                    </label>
+
+                    <label for="email3">
+                        <input type="email" id="email3" placeholder="E-Mail" name="email" required>
+                    </label>
+
+                    <input type="submit" value="отправить">
+                </form>
+
+                <div class="phone_number">или позвоните нам: +996 550 901 440</div>
+            </div>
         </div>
+    </div>
 
-        <div class="stages">
-            <div class="stage">
-                <div class="bg_line"></div>
-                <span>1.</span>
+    <div class="bg9" id="company">
+        <div class="content9 grid group">
+            <div class="title_block">
+                <h2>&nbsp;&nbsp;о компании <span>premium &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wood</span>
+                    <span class="hider"></span></h2>
+                <img src="{% static 'images/short_line.png' %}" alt="image">
+                <img src="{% static 'images/long_line.png' %}" alt="image">
+            </div>
 
-                <p>Сырье, поступает на предприятие в виде заготовок, уложенных в паллеты. В каждой паллете осуществляется выборочный контроль заготовок древесины на наличие дефекта.
+            <div class="text_block">
+                <p>Premium Wood- одна из первых крупнейших компаний в СНГ по производству инженерной паркетной доски.
+                    Двухслойные и трехслойные напольные покрытия изготовлены по современной немецкой технологии на
+                    оборудовании Шредер. Наши мастера работают с натуральным деревом Ильм, претворяя в жизнь любые идеи
+                    наших заказчиков.
                 </p>
-            </div>
 
-            <div class="stage">
-                <div class="bg_line"></div>
-                <span>2.</span>
-
-                <p>Все заготовки закладываются в сушильные камеры и в течение полутора месяцев обрабатываются горячим воздухом с высокой температурой. На этом же этапе для получения заготовок из сосны, березы и бука с другими механическими (прочность) и физическими (цвет) свойствами, их подвергают термической обработке. Термообработка – это нагрев древесины до высокой температуры без доступа кислорода с последующим естественным охлаждением.
-
+                <p>Качество продукции, паркетных работ и сервисных услуг – основа деятельности нашей компании.
                 </p>
+
+                <p>Преимущества компании:<br>
+                    -Индивидуальный подход к каждому клиенту<br>
+                    - Оптимальное сочетание цены и качества
+                    - Эксклюзивные разработки<br>
+                    - Реальные сроки исполнения заказов</p>
+
+                <p>Наши реквизиты OcOO “Premium Wood”<br>
+                    ИНН/ОКПО: 0192201410047 / 28633161002</p>
             </div>
-
-            <div class="stage">
-                <div class="bg_line"></div>
-                <span>3.</span>
-
-                <p>Деревянную заготовку на пильном станке распиливают на доски заданной ширины и толщины.
-                    Доски заданной толщины поперечно распиливают на заготовки определенной длинны, одновременно срезая дефектные места.
-
-                </p>
-            </div>
-
-            <div class="stage">
-                <div class="bg_line"></div>
-                <span>4.</span>
-
-                <p>Склеивание паркетной доски в единое целое осуществляется на автоматической линии склеивания. Верхний слой получают путем склеивания ламелей в торец без подложки. Затем на автоматической линии склеивания верхний, средний и нижний слои склеиваются в единое целое. После автоматической линии склеивания паркетная доска загружается в паровой пресс где прессуется и прогревается на всю толщину.
-
-                </p>
-            </div>
-
-            <div class="stage">
-                <div class="bg_line"></div>
-                <span>5.</span>
-
-                <p>Обработка верхнего слоя паркетной доски
-
-                </p>
-            </div>
-
-            <div class="stage">
-                <div class="bg_line"></div>
-                <span>6.</span>
-
-                <p>Для упаковки применяются только те материалы, которые можно использовать в качестве вторичных
-
-                </p>
-            </div>
-        </div>
-
-        <div class="form_block">
-
-            <i class="pen"></i>
-
-            <form method="post" action="#" class="form">
-
-                <h2>объемы и доставка</h2>
-                <h5>оставьте заявку сейчас и мы проведем для вас все необходимые расчеты</h5>
-
-
-                <label for="name1">
-                    <input type="text" id="name1" placeholder="Имя">
-                </label>
-
-                <label for="number1">
-                    <input type="number" id="number1" placeholder="Телефон с кодом">
-                </label>
-
-                <label for="email1">
-                    <input type="email" id="email1" placeholder="E-Mail">
-                </label>
-
-                <input type="submit" value="отправить">
-            </form>
-
-            <div class="phone_number">или позвоните нам: +996 550 901 440</div>
         </div>
     </div>
-</div>
 
-<div class="bg6">
-    <div class="content6 grid">
-        <div class="title_block">
-            <h2>&nbsp;&nbsp;процесс <span>производства</span>
-                <span class="hider"></span></h2>
-             <img src="{% static 'images/short_line.png' %}" alt="image">
-            <img src="{% static 'images/advantage_pattern.png' %}" alt="image">
+    <div class="bg10" id="contacts">
+        <div class="map_iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93561.92088066317!2d74.52182065736794!3d42.876853703847246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dc91b3c881%3A0x492ebaf57cdee27d!2z0JHQuNGI0LrQtdC6LCDQmtC40YDQs9C40LfQuNGP!5e0!3m2!1sru!2sru!4v1488799605887"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
-        <div class="process">
-            <div class="process_img">
-                <img src="{% static 'images/process1.jpg' %}" alt="image">
-            </div>
+        <div class="location_bg">
+            <div class="location">
+                <h2>контакты</h2>
 
-            <div class="process_img">
-                <img src="{% static 'images/process2.jpg' %}" alt="image">
-            </div>
-
-            <div class="process_img">
-                <div class="process_img_min">
-                    <img src="{% static 'images/process3.jpg' %}" alt="image">
-                </div>
-                <div class="process_img_min">
-                    <img src="{% static 'images/process4.jpg' %}" alt="image">
-                </div>
-            </div>
-
-            <div class="process_img">
-                <img src="{% static 'images/process5.jpg' %}" alt="image">
-            </div>
-
-            <div class="process_img">
-               <img src="{% static 'images/process6.jpg' %}" alt="image">
-            </div>
-
-            <div class="process_img">
-                <img src="{% static 'images/process7.jpg' %}" alt="image">
-            </div>
-        </div>
-
-        <div class="video_bg">
-            <div class="video">
-                <div class="p_video">
-                    <span>видеоролик</span>
-
-                    <h5>оцените<br>
-                        процесс<br>
-                        произ-<br>
-                        водства<br>
-                        вживую</h5>
-                </div>
-                <div class="iframe">
-                    <iframe src="https://www.youtube.com/embed/EkWPMaCd0aY?ecver=1" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <ul class="place">
+                    <li><p>+996 550 901 440</p></li>
+                    <li><p>info@pw.kg</p></li>
+                    <li><p>Бишкек, ул. Токтогула 328a</p></li>
+                </ul>
             </div>
         </div>
 
     </div>
-</div>
 
-<div class="bg7">
-    <div class="content7 grid group">
-        <div class="title_block">
-            <h2>&nbsp;&nbsp;сертификаты <span>premium &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wood</span>
-                <span class="hider"></span></h2>
-            <img src="{% static 'images/short_line.png' %}" alt="image">
-            <img src="{% static 'images/advantage_pattern.png' %}" alt="image">
+    <footer>
+        <div class="footer grid group">
+            <div class="copyright">© Premium Wood</div>
+            <div class="copyright">Дизайн проекта: Александр Богачев</div>
         </div>
+    </footer>
 
-        <div class="slider">
-            <div class="sl_slide">
-                <img src="{% static 'images/certificate2.jpg' %}" alt="image">
-            </div>
+    {% block scripts %}
+        <script>
 
-            <div class="sl_slide">
-                <img src="{% static 'images/certificate2.jpg' %}" alt="image">
-            </div>
+            {% if result == "success" %}
+                alert('Ваша заявка успешно отправлена!');
+            {% endif %}
 
-            <div class="sl_slide">
-                <img src="{% static 'images/certificate2.jpg' %}" alt="image">
-            </div>
+            {% if result == "error" %}
+                alert('Возники проблемы, попробуйте позже!')
+            {% endif %}
 
-            <div class="sl_slide">
-                <img src="{% static 'images/certificate2.jpg' %}" alt="image">
-            </div>
-        </div>
-    </div>
-</div>
+        </script>
+    {% endblock %}
 
-<div class="bg8">
-    <div class="content8 grid">
-
-        <div class="title_block">
-            <h2>&nbsp; <span>отзывы</span> наших &nbsp;&nbsp;клиентов
-                <span class="hider"></span></h2>
-            <img src="{% static 'images/short_line.png' %}" alt="image">
-            <img src="{% static 'images/advantage_pattern.png' %}" alt="image">
-        </div>
-
-        <div class="vertical_slider group">
-
-            <div class="v_slider_nav">
-                <div class="sl_nav_item">
-                    <i class="polygon"></i>
-                    <img src="{% static 'images/comment1.jpg' %}" alt="image">
-                </div>
-
-                <div class="sl_nav_item">
-                    <i class="polygon"></i>
-                    <img src="{% static 'images/comment1.jpg' %}" alt="image">
-                </div>
-
-                <div class="sl_nav_item">
-                    <i class="polygon"></i>
-                    <img src="{% static 'images/comment1.jpg' %}" alt="image">
-                </div>
-
-                <div class="sl_nav_item">
-                    <i class="polygon"></i>
-                    <img src="{% static 'images/comment1.jpg' %}" alt="image">
-                </div>
-            </div>
-
-            <div class="v_slider">
-                <div class="sl_item">
-                    <img src="{% static 'images/main_comment.jpg' %}" alt="image">
-                </div>
-
-                <div class="sl_item">
-                    <img src="{% static 'images/main_comment.jpg' %}" alt="image">
-                </div>
-
-                <div class="sl_item">
-                    <img src="{% static 'images/main_comment.jpg' %}" alt="image">
-                </div>
-
-                <div class="sl_item">
-                    <img src="{% static 'images/main_comment.jpg' %}" alt="image">
-                </div>
-            </div>
-
-        </div>
-
-        <div class="form_block">
-            <form method="post" action="#" class="form">
-
-                <h2>остались вопросы?</h2>
-                <h5>оставьте свои данные</h5>
-                <h5>и наш специалист свяжется с вами</h5>
-
-
-                <label for="name2">
-                    <input type="text" id="name2" placeholder="Имя">
-                </label>
-
-                <label for="number2">
-                    <input type="number" id="number2" placeholder="Телефон с кодом">
-                </label>
-
-                <label for="email3">
-                    <input type="email" id="email3" placeholder="E-Mail">
-                </label>
-
-                <input type="submit" value="отправить">
-            </form>
-
-            <div class="phone_number">или позвоните нам: +996 550 901 440</div>
-        </div>
-    </div>
-</div>
-
-<div class="bg9" id="company">
-    <div class="content9 grid group">
-        <div class="title_block">
-            <h2>&nbsp;&nbsp;о компании <span>premium &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wood</span>
-                <span class="hider"></span></h2>
-            <img src="{% static 'images/short_line.png' %}" alt="image">
-            <img src="{% static 'images/long_line.png' %}" alt="image">
-        </div>
-
-        <div class="text_block">
-            <p>Premium Wood- одна из первых крупнейших компаний в СНГ по производству инженерной паркетной доски.  Двухслойные и трехслойные напольные покрытия изготовлены по современной немецкой технологии на оборудовании Шредер. Наши мастера работают с натуральным деревом Ильм, претворяя в жизнь любые идеи наших заказчиков.
-            </p>
-
-            <p>Качество продукции, паркетных работ и сервисных услуг – основа деятельности нашей компании.
-            </p>
-
-            <p>Преимущества компании:<br>
-                -Индивидуальный подход к каждому клиенту<br>
-                - Оптимальное сочетание цены и качества
-                - Эксклюзивные разработки<br>
-                - Реальные сроки исполнения заказов</p>
-
-            <p>Наши реквизиты OcOO “Premium Wood”<br>
-                ИНН/ОКПО: 0192201410047 / 28633161002</p>
-        </div>
-    </div>
-</div>
-
-<div class="bg10" id="contacts">
-    <div class="map_iframe">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93561.92088066317!2d74.52182065736794!3d42.876853703847246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7dc91b3c881%3A0x492ebaf57cdee27d!2z0JHQuNGI0LrQtdC6LCDQmtC40YDQs9C40LfQuNGP!5e0!3m2!1sru!2sru!4v1488799605887" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-
-    <div class="location_bg">
-        <div class="location">
-            <h2>контакты</h2>
-
-            <ul class="place">
-                <li><p>+996 550 901 440</p></li>
-                <li><p>info@pw.kg</p></li>
-                <li><p>Бишкек, ул. Токтогула 328a</p></li>
-            </ul>
-        </div>
-    </div>
-
-</div>
-
-<footer>
-    <div class="footer grid group">
-        <div class="copyright">© Premium Wood</div>
-        <div class="copyright">Дизайн проекта: Александр Богачев</div>
-    </div>
-</footer>
 {% endblock %}
