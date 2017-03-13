@@ -127,7 +127,7 @@ body {
 }
 
 .popup-inner .form input[type="submit"] {
-    background-color: #a58659;
+    background-color: #896850;
     color: #fff;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
@@ -136,9 +136,9 @@ body {
 }
 
 .popup-inner .form input[type="submit"]:hover {
-    border: 3px solid #a58659;
+    border: 3px solid #896850;
     background-color: transparent;
-    color: #a58659;
+    color: #fff;
 }
 
 /* Close Button */
@@ -851,10 +851,10 @@ input[type='email'] {
 }
 
 .form input[type="submit"] {
-    background-color: #ffe192;
+    background-color: #896850;
     font-family: "CirceBold", sans-serif;
     font-size: 12px;
-    color: #896850;
+    color: #fff;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: 30px;
@@ -868,9 +868,9 @@ input[type='email'] {
 }
 
 .form input[type="submit"]:hover {
-    border: 3px solid #ffe192;
+    border: 3px solid #896850;
     background-color: transparent;
-    color: #ffe192;
+    color: #896850;
 }
 
 .phone_number {
@@ -1145,6 +1145,10 @@ input[type='email'] {
     width: 263px;
     height: 358px;
     padding-top: 20px;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
 }
 
 .p_video span {
@@ -1164,6 +1168,10 @@ input[type='email'] {
     color: #fff;
     line-height: 1.2;
     padding: 20px 0 0 84px;
+}
+
+.video:hover .p_video {
+    opacity: 0;
 }
 
 /*------------------BG7------------------*/
@@ -1248,7 +1256,7 @@ input[type='email'] {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #c7c7c7;
+    background-color: #896850;
     content: '';
     opacity: 1;
     box-sizing: border-box;
@@ -1433,12 +1441,10 @@ input[type='email'] {
 }
 
 .location_bg {
-    background: url("../images/pointer.png") right top no-repeat;
     position: absolute;
     top: 65px;
     left: 12%;
     display: inline-block;
-    padding-right: 272px;
 
 }
 
