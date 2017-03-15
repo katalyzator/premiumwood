@@ -124,8 +124,8 @@
 })();
 
 function Show1() {
-    event.preventDefault();
-    $('.parquet_details > a').removeClass('active_dot');
+    //event.preventDefault();
+    $('.parquet_details > .dot').removeClass('active_dot');
     $(this).addClass('active_dot');
     var line = $('.line');
     var text = $('.description > p');
@@ -133,18 +133,13 @@ function Show1() {
     text.css('display', 'none');
     $('.d_title p').css('display', 'none');
     $('.line1').fadeIn(1000);
-    //text.html("��� ����- ��� ���������� �����������. ������� ����� ������� ������ ������������ ������������ ������. ��������� ����, ��� ��� ���� ������ ������� ���, ��� ������� ���������� ��������� ��������� �� ������� ���������������� �����������, �������������� ������� �������������� ������������ � ��������� ���������� ��������.");
-    //$('.load_block').append('.load_text1');
     $('.load_title1').css('display', 'inline-block');
     $('.load_text1').slideDown(1300);
-    //$('.load_text1').slideDown(1300);
-    //text.css({"opacity": "1", "left": "0"});
-    //$('.d_title p').html("���������� �����");
 }
 
 function Show2() {
-    event.preventDefault();
-    $('.parquet_details > a').removeClass('active_dot');
+    //event.preventDefault();
+    $('.parquet_details > .dot').removeClass('active_dot');
     $(this).addClass('active_dot');
     var line = $('.line');
     var text = $('.description > p');
@@ -152,16 +147,13 @@ function Show2() {
     text.css('display', 'none');
     $('.d_title p').css('display', 'none');
     $('.line2').fadeIn(1000);
-    //text.html("Hello world Aibek! jdsfhjd fdskfkjhsadf sadkkjfhsadjkfh sjdkafhkjsdahf sdjfhds fdsjfh dsjf fkdjsafhjkdsh fdsjkfhdsjk fsadjfhjashdfjkds fdsfhj");
     $('.load_title2').css('display', 'inline-block');
     $('.load_text2').slideDown(1300);
-    //text.css({"opacity": "1", "left": "0"});
-    //$('.d_title p').html("Hello world Nurbek!");
 }
 
 function Show3() {
-    event.preventDefault();
-    $('.parquet_details > a').removeClass('active_dot');
+    //event.preventDefault();
+    $('.parquet_details > .dot').removeClass('active_dot');
     $(this).addClass('active_dot');
     var line = $('.line');
     var text = $('.description > p');
@@ -169,16 +161,13 @@ function Show3() {
     text.css('display', 'none');
     $('.d_title p').css('display', 'none');
     $('.line3').fadeIn(1000);
-    //text.html("Hello world Aibek! sdjfh fdshfsdjf sdjfhdsj fgkadsjhfjkadsh fkjfadshfj adsfhdasjkf adskfhadsj fdsh");
     $('.load_title3').css('display', 'inline-block');
     $('.load_text3').slideDown(1300);
-    //text.css({"opacity": "1", "left": "0"});
-    //$('.d_title p').html("Hello world Avaz!");
 }
 
 function Show4() {
-    event.preventDefault();
-    $('.parquet_details > a').removeClass('active_dot');
+    //event.preventDefault();
+    $('.parquet_details > .dot').removeClass('active_dot');
     $(this).addClass('active_dot');
     var line = $('.line');
     var text = $('.description > p');
@@ -186,11 +175,8 @@ function Show4() {
     text.css('display', 'none');
     $('.d_title p').css('display', 'none');
     $('.line4').fadeIn(1000);
-    //text.html("Hello world Aibek! dskfgjkds dskjfhsdfjkg kdjsfghdsfj gsdfjghjksdf gkjdfhg dsfg dfsjkghdsf gsdfj");
     $('.load_title4').css('display', 'inline-block');
     $('.load_text4').slideDown(1300);
-    //text.css({"opacity": "1", "left": "0"});
-    //$('.d_title p').html("Hello world Nagima!");
 }
 
 $(document).ready(function () {
@@ -208,12 +194,20 @@ $(document).ready(function () {
             e.preventDefault();
         });
 
+
         //----- CLOSE
         $('[data-popup-close]').on('click', function (e) {
 
             e.preventDefault();
             var targeted_popup_class = jQuery(this).attr('data-popup-close');
             $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+        });
+
+        $(".item").magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
         });
     });
 });

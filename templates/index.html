@@ -8,25 +8,27 @@
         <div class="popup-inner">
             <!--<div class="popup_content">-->
 
-            <form method="post" action="{% url 'sendmail' %}" class="form">
+            <div class="pop_header">
+                <h2>Заявка</h2>
+                <p>Заполните форму и мы свяжемся с вами в течение часа</p>
 
-                <p>Заполните форму, чтобы оставить заявку</p>
+                <a class="popup-close" data-popup-close="popup-1"></a>
+            </div>
 
+            <form method="post" action="#" class="form">
                 <label for="name0">
-                    <input type="text" id="name0" placeholder="Имя" name="name">
+                    <input type="text" id="name0" placeholder="Имя">
                 </label>
 
                 <label for="number0">
-                    <input type="number" id="number0" placeholder="Телефон с кодом" required name="number">
+                    <input type="number" id="number0" placeholder="Телефон с кодом">
                 </label>
 
                 <label for="email0">
-                    <input type="email" id="email0" placeholder="E-Mail" name="email" required>
+                    <input type="email" id="email0" placeholder="E-Mail">
                 </label>
 
                 <input type="submit" value="отправить">
-
-                <a class="popup-close" data-popup-close="popup-1"></a>
             </form>
 
         </div>
@@ -146,29 +148,29 @@
                 <div class="parquet_details">
                     <img src="{% static 'images/wood.png' %}" alt="image">
 
-                    <a href="#" class="dot dot1 active_dot">
+                    <div class="dot dot1 active_dot">
                         <div class="m_dot">
                             <div></div>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="#" class="dot dot2">
+                    <div class="dot dot2">
                         <div class="m_dot">
                             <div></div>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="#" class="dot dot3">
+                    <div class="dot dot3">
                         <div class="m_dot">
                             <div></div>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="#" class="dot dot4">
+                    <div class="dot dot4">
                         <div class="m_dot">
                             <div></div>
                         </div>
-                    </a>
+                    </div>
 
                     <div class="line line1"></div>
                     <div class="line line2"></div>
@@ -239,15 +241,15 @@
 
                     <div class="tabs-stage">
                         <div class="p_imperial" id="tab-1">
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
-
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
+{##}
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
 
                             <div class="parquet_img">
                                 <img src="{% static 'images/imperial1.jpg' %}" alt="image">
@@ -261,15 +263,15 @@
                         </div>
 
                         <div class="p_imperial" id="tab-2">
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
-
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
+{##}
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
 
                             <div class="parquet_img">
                                 <img src="{% static 'images/imperial1.jpg' %}" alt="image">
@@ -283,15 +285,15 @@
                         </div>
 
                         <div class="p_imperial" id="tab-3">
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
-
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
+{##}
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
 
                             <div class="parquet_img">
                                 <img src="{% static 'images/imperial1.jpg' %}" alt="image">
@@ -305,15 +307,15 @@
                         </div>
 
                         <div class="p_imperial" id="tab-4">
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
-
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
+{##}
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
 
                             <div class="parquet_img">
                                 <img src="{% static 'images/imperial1.jpg' %}" alt="image">
@@ -327,15 +329,15 @@
                         </div>
 
                         <div class="p_imperial" id="tab-5">
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
-
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
+{##}
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
 
                             <div class="parquet_img">
                                 <img src="{% static 'images/imperial1.jpg' %}" alt="image">
@@ -417,15 +419,15 @@
 
                     <div class="tabs-block">
                         <div class="p_imperial" id="tab-6">
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
-
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
+{##}
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
 
                             <div class="parquet_img">
                                 <img src="{% static 'images/imperial1.jpg' %}" alt="image">
@@ -439,15 +441,15 @@
                         </div>
 
                         <div class="p_imperial" id="tab-7">
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
-
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
+{##}
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
 
                             <div class="parquet_img">
                                 <img src="{% static 'images/imperial1.jpg' %}" alt="image">
@@ -461,15 +463,15 @@
                         </div>
 
                         <div class="p_imperial" id="tab-8">
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
-
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
+{##}
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
 
                             <div class="parquet_img">
                                 <img src="{% static 'images/imperial1.jpg' %}" alt="image">
@@ -483,15 +485,15 @@
                         </div>
 
                         <div class="p_imperial" id="tab-9">
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
-
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
+{##}
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
 
                             <div class="parquet_img">
                                 <img src="{% static 'images/imperial1.jpg' %}" alt="image">
@@ -505,15 +507,15 @@
                         </div>
 
                         <div class="p_imperial" id="tab-10">
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
-
-                            <div class="parquet_img">
-                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">
-                                <img src="{% static 'images/image_pattern.png' %}" alt="image">
-                            </div>
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
+{##}
+{#                            <div class="parquet_img">#}
+{#                                <img src="{% static 'images/imperial1.jpg' %}" alt="image">#}
+{#                                <img src="{% static 'images/image_pattern.png' %}" alt="image">#}
+{#                            </div>#}
 
                             <div class="parquet_img">
                                 <img src="{% static 'images/imperial1.jpg' %}" alt="image">
@@ -797,35 +799,38 @@
             </div>
 
             <div class="process">
-                <div class="process_img">
-                    <img src="{% static 'images/process1.jpg' %}" alt="image">
-                </div>
+            <!--<div class="process_img">-->
+            <a href="{% static 'images/process1.jpg' %}" class="item process_img">
+                <img src="{% static 'images/process1.jpg' %}" alt="image">
+            </a>
+            <!--</div>-->
 
-                <div class="process_img">
-                    <img src="{% static 'images/process2.jpg' %}" alt="image">
-                </div>
+            <a href="{% static 'images/process2.jpg' %}" class="item process_img">
+                <img src="{% static 'images/process2.jpg' %}" alt="image">
+            </a>
 
-                <div class="process_img">
-                    <div class="process_img_min">
-                        <img src="{% static 'images/process3.jpg' %}" alt="image">
-                    </div>
-                    <div class="process_img_min">
-                        <img src="{% static 'images/process4.jpg' %}" alt="image">
-                    </div>
-                </div>
+            <div class="process_img">
+                <a href="{% static 'images/process3.jpg' %}" class="item process_img_min">
+                    <img src="{% static 'images/process3.jpg' %}" alt="image">
+                </a>
 
-                <div class="process_img">
+                <a href="{% static 'images/process4.jpg' %}" class="item process_img_min">
                     <img src="{% static 'images/process5.jpg' %}" alt="image">
-                </div>
-
-                <div class="process_img">
-                    <img src="{% static 'images/process6.jpg' %}" alt="image">
-                </div>
-
-                <div class="process_img">
-                    <img src="{% static 'images/process7.jpg' %}" alt="image">
-                </div>
+                </a>
             </div>
+
+            <a href="{% static 'images/process5.jpg' %}" class="item process_img">
+                <img src="{% static 'images/process5.jpg' %}" alt="image">
+            </a>
+
+            <a href="{% static 'images/process6.jpg' %}" class="item process_img">
+                <img src="{% static 'images/process6.jpg' %}" alt="image">
+            </a>
+
+            <a href="{% static 'images/process7.jpg' %}" class="item process_img">
+                <img src="{% static 'images/process7.jpg' %}" alt="image">
+            </a>
+        </div>
 
             <div class="video_bg">
                 <div class="video">
