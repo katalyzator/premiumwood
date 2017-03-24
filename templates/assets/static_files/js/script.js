@@ -32,7 +32,7 @@
     $('.tabs-stage > div:nth-child(1), .tabs-block > div:nth-child(1)').show();
     $('.tabs-nav > li:first-child p, .tabs-button > li:first-child p').addClass('tab_active');
 
-    // Изменить класс вкладки и отобразить содержимое
+    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     $('.tabs-nav > li > a').on('click', function (event) {
         event.preventDefault();
         $('.tabs-nav > li p').removeClass('tab_active');
@@ -194,7 +194,14 @@ $(document).ready(function () {
     });
 
 
-    $(".item").magnificPopup({
+    $(".exclusive .parquet_img > .item").magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+
+    $(".imperial .parquet_img > .item").magnificPopup({
         type: 'image',
         gallery: {
             enabled: true
