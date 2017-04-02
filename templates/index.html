@@ -18,15 +18,15 @@
 
             <form method="post" action="{% url 'sendmail' %}" class="form">
                 <label for="name0">
-                    <input type="text" id="name0" placeholder="Имя" name="name">
+                    <input type="text" id="name0" placeholder="Имя" name="name" required>
                 </label>
 
                 <label for="number0">
-                    <input type="number" id="number0" placeholder="Телефон с кодом" name="number">
+                    <input type="number" id="number0" placeholder="Телефон с кодом" name="number" required>
                 </label>
 
                 <label for="email0">
-                    <input type="email" id="email0" placeholder="E-Mail" name="email">
+                    <input type="email" id="email0" placeholder="E-Mail" name="email" required>
                 </label>
 
                 <input type="submit" value="отправить">
@@ -375,15 +375,15 @@
                     <div class="tabs-stage">
                         <div class="p_imperial" id="tab-1">
                             <div class="parquet_img">
-                                <a href="{% static 'images/imperial1.jpg' %}" class="item">
-                                    <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <a href="{% static 'images/imperial.jpg' %}" class="item">
+                                    <img src="{% static 'images/sboku_imperial.jpg' %}" alt="image">
                                     <img src="{% static 'images/image_pattern.png' %}" alt="image">
                                 </a>
                             </div>
 
                             <div class="parquet_img">
-                                <a href="{% static 'images/imperial1.jpg' %}" class="item">
-                                    <img src="{% static 'images/imperial1.jpg' %}" alt="image">
+                                <a href="{% static 'images/imperial.jpg' %}" class="item">
+                                    <img src="{% static 'images/sverhu_imperial.jpg' %}" alt="image">
                                     <img src="{% static 'images/image_pattern.png' %}" alt="image">
                                 </a>
                             </div>
@@ -508,7 +508,7 @@
                         <li>
                             <a href="#tab-1">
                                 <div class="min_block">
-                                    <img src="{% static 'images/imperial_min.jpg' %}" alt="image">
+                                    <img src="{% static 'images/imperial_min_1.jpg' %}" alt="image">
                                 </div>
 
                                 <p>Текстура</p>
@@ -866,7 +866,8 @@
                     <div class="shadow"></div>
                     <img src="{% static 'images/step2.jpg' %}" alt="image">
                     <p class="stage_desc">На завод приходит бревно (кругляк) и отбирается
-                        только самая качественная древесина. Производится продольный разрез на брусья на немецком оборудовании «Schroeder». </p>
+                        только самая качественная древесина. Производится продольный разрез на брусья на немецком
+                        оборудовании «Schroeder». </p>
                 </div>
 
                 <div class="stage">
@@ -910,13 +911,13 @@
                     </p>
                 </div>
 
-                <div class="stage">
-                    <div class="shadow"></div>
-                    <img src="{% static 'images/step7.jpg' %}" alt="image">
-                    <p class="stage_desc">Браширование. На этом этапе убираются мягки ткани с поверхности доски, за счет
-                        чего приобретается потрясающий рельеф, делающий доску такой приятной на ощупь.
-                    </p>
-                </div>
+                {#                <div class="stage">#}
+                {#                    <div class="shadow"></div>#}
+                {#                    <img src="{% static 'images/step7.jpg' %}" alt="image">#}
+                {#                    <p class="stage_desc">Браширование. На этом этапе убираются мягки ткани с поверхности доски, за счет#}
+                {#                        чего приобретается потрясающий рельеф, делающий доску такой приятной на ощупь.#}
+                {#                    </p>#}
+                {#                </div>#}
 
                 <div class="stage">
                     <div class="shadow"></div>
@@ -999,33 +1000,7 @@
                 <!--</div>-->
             </div>
 
-            <div class="form_block">
 
-                <i class="pen"></i>
-
-                <form method="post" action="{% url 'sendmail' %}" class="form">
-
-                    <h2>объемы и доставка</h2>
-                    <h5>оставьте заявку сейчас и мы проведем для вас все необходимые расчеты</h5>
-
-
-                    <label for="name1">
-                        <input type="text" id="name1" placeholder="Имя" name="name" required>
-                    </label>
-
-                    <label for="number1">
-                        <input type="number" id="number1" placeholder="Телефон с кодом" name="number" required>
-                    </label>
-
-                    <label for="email1">
-                        <input type="email" id="email1" placeholder="E-Mail" name="email" required>
-                    </label>
-
-                    <input type="submit" value="отправить">
-                </form>
-
-                <div class="phone_number">или позвоните нам: +996 550 901 440</div>
-            </div>
         </div>
     </div>
 
@@ -1177,23 +1152,25 @@
             {#            </div>#}
 
             <div class="form_block">
+
+                <i class="pen"></i>
+
                 <form method="post" action="{% url 'sendmail' %}" class="form">
 
-                    <h2>остались вопросы?</h2>
-                    <h5>оставьте свои данные</h5>
-                    <h5>и наш специалист свяжется с вами</h5>
+                    <h2>объемы и доставка</h2>
+                    <h5>оставьте заявку сейчас и мы проведем для вас все необходимые расчеты</h5>
 
 
-                    <label for="name2">
-                        <input type="text" id="name2" placeholder="Имя" name="name" required>
+                    <label for="name1">
+                        <input type="text" id="name1" placeholder="Имя" name="name" required>
                     </label>
 
-                    <label for="number2">
-                        <input type="number" id="number2" placeholder="Телефон с кодом" name="number" required>
+                    <label for="number1">
+                        <input type="number" id="number1" placeholder="Телефон с кодом" name="number" required>
                     </label>
 
-                    <label for="email3">
-                        <input type="email" id="email3" placeholder="E-Mail" required name="email">
+                    <label for="email1">
+                        <input type="email" id="email1" placeholder="E-Mail" name="email" required>
                     </label>
 
                     <input type="submit" value="отправить">
