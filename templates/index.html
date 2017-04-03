@@ -36,13 +36,16 @@
         <!--</div>-->
     </div>
 
-    <header>
+    <header >
+
         <div class="header grid group">
             <a href="#main" class="main"></a>
             <!--<img src="assets/images/logo_big.png" alt="image" class="logo">-->
 
-            <nav>
+            <nav class="menu-collapsed">
+                <div class="bar"></div>
                 <ul class="menu">
+                    <li><a href="#main">главная</a></li>
                     <li><a href="#product">продукция</a></li>
                     <li><a href="#company">о компании</a></li>
                     <li><a href="#contacts">контакты</a></li>
@@ -58,6 +61,7 @@
 
     <div class="bg1">
         <div class="content1 grid">
+            <div class="rectangle"></div>
             <div class="title">
                 <h1>инженерная паркетная доска премиум-класса</h1>
 
@@ -375,14 +379,14 @@
                     <div class="tabs-stage">
                         <div class="p_imperial" id="tab-1">
                             <div class="parquet_img">
-                                <a href="{% static 'images/imperial.jpg' %}" class="item">
+                                <a href="{% static 'images/imperial_sboku_original.jpg' %}" class="item">
                                     <img src="{% static 'images/sboku_imperial.jpg' %}" alt="image">
                                     <img src="{% static 'images/image_pattern.png' %}" alt="image">
                                 </a>
                             </div>
 
                             <div class="parquet_img">
-                                <a href="{% static 'images/imperial.jpg' %}" class="item">
+                                <a href="{% static 'images/imperial_original.jpg' %}" class="item">
                                     <img src="{% static 'images/sverhu_imperial.jpg' %}" alt="image">
                                     <img src="{% static 'images/image_pattern.png' %}" alt="image">
                                 </a>
@@ -581,14 +585,14 @@
                     <div class="tabs-block">
                         <div class="p_imperial" id="tab-6">
                             <div class="parquet_img">
-                                <a href="{% static 'images/exclusive.jpg' %}" class="item">
+                                <a href="{% static 'images/exclusive_original.jpg' %}" class="item">
                                     <img src="{% static 'images/sboku_exclusive.jpg' %}" alt="image">
                                     <img src="{% static 'images/image_pattern.png' %}" alt="image">
                                 </a>
                             </div>
 
                             <div class="parquet_img">
-                                <a href="{% static 'images/imperial1.jpg' %}" class="item">
+                                <a href="{% static 'images/exclusive_sverhu_original.jpg' %}" class="item">
                                     <img src="{% static 'images/sverhu_exclusive.jpg' %}" alt="image">
                                     <img src="{% static 'images/image_pattern.png' %}" alt="image">
                                 </a>
