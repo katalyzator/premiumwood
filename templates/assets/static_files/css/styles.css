@@ -1875,7 +1875,7 @@ input[type='email'] {
     }
 
     .content1 {
-        padding: 55px 0 60px 0;
+        padding: 55px 10px 60px 10px;
     }
 }
 
@@ -1893,7 +1893,7 @@ input[type='email'] {
 
 @media screen and (max-width: 480px) {
     .content1 {
-        padding: 30px 0 35px 0;
+        padding: 30px 10px 35px 10px;
     }
 
     h1 {
