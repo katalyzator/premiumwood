@@ -1729,6 +1729,47 @@ input[type='email'] {
 
 /*------------------RESPONSIVE------------------*/
 
+/*-----------------POP-UP-----------------*/
+
+@media screen and (max-width: 740px) {
+
+    .popup-inner {
+        max-width: 550px;
+        height: 410px;
+    }
+
+    .pop_header {
+        width: 100%;
+        height: 150px;
+    }
+
+    .pop_header h2 {
+        background: none;
+        font-size: 42px;
+        padding: 15px 0 10px 0;
+    }
+
+    .pop_header p {
+        width: 95%;
+    }
+
+    .popup-inner .form {
+        height: auto;
+        padding: 20px 0 0 0;
+    }
+
+    .popup-inner .form input[type="submit"] {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .popup-inner {
+        width: 95%;
+    }
+}
+
 /*------------------HEADER------------------*/
 
 @media screen and (max-width: 1100px) {
@@ -1875,7 +1916,7 @@ input[type='email'] {
     }
 
     .content1 {
-        padding: 55px 10px 60px 10px;
+        padding: 55px 5px 60px 5px;
     }
 }
 
@@ -1891,13 +1932,13 @@ input[type='email'] {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .content1 {
-        padding: 30px 10px 35px 10px;
+        padding: 30px 5px 35px 5px;
     }
 
     h1 {
-        font-size: 58px;
+        font-size: 54px;
         line-height: 1;
     }
 
@@ -1907,6 +1948,12 @@ input[type='email'] {
     }
 }
 
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 52px;
+    }
+}
 /*------------------BG2------------------*/
 
 @media screen and (max-width: 1100px) {
@@ -1964,6 +2011,14 @@ input[type='email'] {
     }
 }
 
+@media screen and (max-width: 540px) {
+
+    h2 {
+        font-size: 38px;
+        line-height: 0.9;
+    }
+}
+
 @media screen and (max-width: 480px) {
 
     .content2 .title_block {
@@ -1971,7 +2026,7 @@ input[type='email'] {
     }
 
     h2 {
-        font-size: 42px;
+        font-size: 36px;
     }
 }
 
@@ -2249,19 +2304,32 @@ input[type='email'] {
         height: auto;
     }
 
+    .stage img {
+        height: 220px;
+    }
+
     .shadow {
         display: none;
     }
 
     .stage p {
-        display: none;
+        font-family: "CirceRegular", sans-serif;
+        font-size: 18px;
+        color: #000;
+        line-height: 22px;
+        position: static;
+        bottom: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 10px 5px 0 5px;
+        height: auto;
     }
-}
 
-@media screen and (max-width: 400px) {
-
-    .stage {
-        height: 200px;
+    .stages .slick-prev,
+    .stages .slick-next {
+        top: 110px;
+        transform: translateY(-50%);
     }
 }
 
