@@ -36,7 +36,7 @@
         <!--</div>-->
     </div>
 
-    <header >
+    <header>
 
         <div class="header grid group">
             <a href="#main" class="main"></a>
@@ -1083,19 +1083,27 @@
 
             <div class="slider">
                 <div class="sl_slide">
-                    <img src="{% static 'images/certificate2.jpg' %}" alt="image">
+                    <a href="{% static 'images/certificate2.jpg' %}" class="item">
+                        <img src="{% static 'images/certificate2.jpg' %}" alt="image">
+                    </a>
                 </div>
 
                 <div class="sl_slide">
-                    <img src="{% static 'images/certificate2.jpg' %}" alt="image">
+                    <a href="{% static 'images/certificate2.jpg' %}" class="item">
+                        <img src="{% static 'images/certificate2.jpg' %}" alt="image">
+                    </a>
                 </div>
 
                 <div class="sl_slide">
-                    <img src="{% static 'images/certificate2.jpg' %}" alt="image">
+                    <a href="{% static 'images/certificate2.jpg' %}" class="item">
+                        <img src="{% static 'images/certificate2.jpg' %}" alt="image">
+                    </a>
                 </div>
 
                 <div class="sl_slide">
-                    <img src="{% static 'images/certificate2.jpg' %}" alt="image">
+                    <a href="{% static 'images/certificate2.jpg' %}" class="item">
+                        <img src="{% static 'images/certificate2.jpg' %}" alt="image">
+                    </a>
                 </div>
             </div>
         </div>
@@ -1162,7 +1170,8 @@
                 <form method="post" action="{% url 'sendmail' %}" class="form">
 
                     <h2>объемы и доставка</h2>
-                    <h5>оставьте заявку сейчас и мы проведем для вас все необходимые расчеты</h5>
+                    <h5>оставьте заявку сейчас и мы проведем для</h5>
+                    <h5>вас все необходимые расчеты</h5>
 
 
                     <label for="name1">

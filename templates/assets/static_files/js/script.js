@@ -63,7 +63,7 @@
         autoplaySpeed: 3000,
         infinite: true,
         centerMode: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         variableWidth: true,
         variableHeight: true,
         arrows: false,
@@ -204,12 +204,21 @@ $(document).ready(function () {
         }
     });
 
+
     $(".imperial .parquet_img > .item").magnificPopup({
         type: 'image',
         gallery: {
             enabled: true
         }
     });
+
+    $(".content7 .slider .sl_slide > .item").magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+
 
     $(".menu-collapsed").click(function () {
         $(this).toggleClass("menu-expanded");
