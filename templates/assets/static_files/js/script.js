@@ -1,6 +1,6 @@
 (function () {
 
-    $('ul.menu > li > a[href^="#"], .main[href^="#"]').on('click', function (event) {
+    $('ul.menu > li > a[href^="#"], .main[href^="#"], .type_bg[href^="#"]').on('click', function (event) {
         var target = $(this.getAttribute('href'));
         if (target.length) {
             event.preventDefault();

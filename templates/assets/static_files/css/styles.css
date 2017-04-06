@@ -676,7 +676,7 @@ h6 {
     border: 1px solid #c5c5c5;
 }
 
-.types > div:last-of-type {
+.types > a:last-of-type {
     margin-right: 0;
 }
 
@@ -734,6 +734,10 @@ h5 span {
     margin-left: 26px;
     padding-left: 10px;
     background-color: #000000;
+}
+
+.imperial {
+    padding-top: 50px;
 }
 
 .imperial > p,
@@ -2137,6 +2141,10 @@ input[type='email'] {
         width: 100%;
         margin-right: 0;
         padding: 15px 0;
+    }
+
+    .imperial {
+        padding-top: 0;
     }
 
     .exclusive {
