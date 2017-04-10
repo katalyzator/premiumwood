@@ -58,9 +58,9 @@
     });
 
     $('.slider').slick({
-        cssEase: 'ease-in',
-        autoplay: true,
-        autoplaySpeed: 3000,
+        // cssEase: 'ease-in',
+        // autoplay: true,
+        // autoplaySpeed: 3000,
         infinite: true,
         centerMode: true,
         slidesToShow: 1,
