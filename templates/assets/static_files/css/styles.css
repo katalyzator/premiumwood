@@ -545,8 +545,8 @@ h6 {
 }
 
 .dot1 {
-    top: 345px;
-    left: 74px;
+    top: 320px;
+    left: 120px;
 }
 
 .dot2 {
@@ -560,8 +560,8 @@ h6 {
 }
 
 .dot4 {
-    top: 152px;
-    right: 204px;
+    top: 190px;
+    right: 195px;
 }
 
 .line {
@@ -573,10 +573,10 @@ h6 {
     display: block;
     background-color: #2a2a2a;
     width: 1px;
-    height: 309px;
-    top: 88px;
-    left: -20px;
-    transform: rotate(137deg);
+    height: 325px;
+    top: 70px;
+    left: 0;
+    transform: rotate(130deg);
 }
 
 .line2 {
@@ -600,10 +600,10 @@ h6 {
 .line4 {
     background-color: #2a2a2a;
     width: 1px;
-    height: 470px;
-    top: -78px;
-    left: 110px;
-    transform: rotate(97deg);
+    height: 485px;
+    top: -69.5px;
+    left: 115px;
+    transform: rotate(100.5deg);
 }
 
 /*------------------ADVANTAGE-BG------------------*/
