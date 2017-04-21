@@ -789,6 +789,14 @@ h5 span {
     list-style: none;
 }
 
+.tabs-button {
+    text-align: center;
+}
+
+.tabs-nav {
+    text-align: center;
+}
+
 .tabs-nav li,
 .tabs-button li {
     display: inline-block;
