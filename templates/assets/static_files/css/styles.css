@@ -546,7 +546,7 @@ h6 {
 
 .dot1 {
     top: 320px;
-    left: 120px;
+    left: 128px;
 }
 
 .dot2 {
@@ -575,7 +575,7 @@ h6 {
     width: 1px;
     height: 325px;
     top: 70px;
-    left: 0;
+    left: 6px;
     transform: rotate(130deg);
 }
 
