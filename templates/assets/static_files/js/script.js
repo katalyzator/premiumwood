@@ -110,6 +110,16 @@
         centerPadding: '0px'
     });
 
+    $('.carousel').carousel({
+        touch: { // whether to enable touch support and which criteria to use for swipe movement
+            enabled: true,
+            thresholds: {
+                speed: 0.4, // multiplied by width of slider per second
+                distance: 0.3 // multiplied by width of slider
+            }
+        }, carouselWidth: 930, carouselHeight: 330, directionNav: true, shadow: true, buttonNav: 'bullets'
+    });
+
 
 })();
 
