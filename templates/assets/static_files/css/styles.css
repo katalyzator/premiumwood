@@ -2512,6 +2512,22 @@ input[type='email'] {
 }
 
 
+.slide_description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.slide_description p {
+    padding: 6px 5px 2px 5px;
+    color: #fff;
+    text-align: center;
+}
+
+
 
 
 
