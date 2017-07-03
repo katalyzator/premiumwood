@@ -2330,7 +2330,7 @@ input[type='email'] {
         height: 220px;
     }
 
-    .shadow {
+    .custom_shadow {
         display: none;
     }
 
@@ -2346,6 +2346,12 @@ input[type='email'] {
         width: 100%;
         padding: 10px 5px 0 5px;
         height: auto;
+    }
+    
+    .content3 .stage p {
+        background-color: #000;
+        color: #fff;
+        padding-bottom: 10px;
     }
 
     .stages .slick-prev,
@@ -2493,13 +2499,18 @@ input[type='email'] {
     }
 }
 
+.content3 .stages {
+    display: none;
+}
+
 @media screen and (max-width: 940px) {
     .carousel {
         display: none;
     }
 
-    h4 {
-        display: none;
+    .content3 .stages {
+        display: block;
+        margin-top: 20px;
     }
 
 }
@@ -2526,6 +2537,8 @@ input[type='email'] {
     color: #fff;
     text-align: center;
 }
+
+
 
 
 
